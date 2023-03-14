@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply transition-colors duration-300;
+  }
+}
+
+.p-screen {
+  @apply p-10 md:p-20;
+}
+
+.btn-mod {
+  @apply text-light-green border-light-green border-2 rounded-full px-4 py-3 font-sans-work hover:bg-light-green hover:text-gray-800 transition ease-in-out duration-200;
+}
+
+.btn-mod-light {
+  @apply bg-dark-green-1 text-dark-green-1 border-dark-green-2 border-2 rounded-full px-4 py-3 font-sans-work hover:bg-dark-green-3 text-gray-50 hover:text-white transition ease-in-out duration-200;
+}
+
+.has-tooltip:hover .tooltip {
+  @apply visible z-50;
+}
+
+.badges {
+  @apply text-gray-300 bg-dark-blue2 text-sm;
+}
+
+@layer utilities {
+  .w-320 {
+    width: 320px;
+  }
+}
+
+.scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  height: 5px;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  /* background-color: #fff; */
+  background-image: -webkit-gradient(
+    linear,
+    40% 0%,
+    75% 84%,
+    from(#4d9c41),
+    to(#19911d),
+    color-stop(0.6, #54de5d)
+  );
+}
+
+/* width */
+/* .scroll::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+} */
+
+/* Track */
+/* .scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+} */
+
+/* Handle */
+/* .scroll::-webkit-scrollbar-thumb {
+  background: #888;
+} */
+
+/* Handle on hover */
+/* .scroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} */
